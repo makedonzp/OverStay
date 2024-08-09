@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../../assets/images/logo_home.svg';
+import { DogAnimation } from '../../components/Animations/DogAnimation';
 import s from './styles.module.scss';
 
 export const HomePage = () => {
@@ -59,7 +61,7 @@ export const HomePage = () => {
   return (
     <div className={s.home__container}>
       <div className={`${s.home__text} ${showText ? s.fadeIn : s.fadeOut}`}>
-        Ночлежка
+        <img src={logo} alt={'Logo'} />
       </div>
       {showProgressBar && (
         <>
@@ -78,6 +80,7 @@ export const HomePage = () => {
               style={{ width: `${progress}%` }}
             ></div>
           </div>
+          <DogAnimation progress={progress} />
         </>
       )}
     </div>

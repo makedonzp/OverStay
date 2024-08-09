@@ -1,7 +1,6 @@
-import React from 'react';
 import s from './styles.module.scss';
 
-const CustomInput = ({
+export const CustomInput = ({
   name,
   placeholder,
   type = 'text',
@@ -27,5 +26,3 @@ const CustomInput = ({
     </div>
   );
 };
-
-export default CustomInput;

@@ -1,0 +1,85 @@
+.characterPage__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d3d3d3;
+  position: relative;
+}
+
+.characterPage__content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  z-index: 1;
+}
+
+.characterPage__logo {
+  margin-bottom: 1rem;
+}
+
+.characterPage__title {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.characterPage__input {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.characterPage__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.characterPage__button {
+  width: 48%;
+  background-color: gray;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #666;
+  }
+  &.selected {
+    background-color: #666;
+  }
+}
+
+.characterPage__playButton {
+  width: 100%;
+  background-color: gray;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  &:hover {
+    background-color: #666;
+  }
+}
+
+.characterPage__image {
+  position: absolute;
+  bottom: 0;
+  max-height: 80%;
+}
+
+.characterPage__image:first-of-type {
+  left: 0;
+}
+
+.characterPage__image:last-of-type {
+  right: 0;
+}
